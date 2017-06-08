@@ -24,7 +24,7 @@ export default class Products extends Component {
   render() {
     const product_listing = this.state.products.map((item) => {
       return <div key={item.id}>
-        <img src={item.product_avatar}/> {item.product_name}: {item.price}
+        <img src={item.product_avatar} alt='cannot load product'/> {item.product_name}: {item.price}
         </div>
     })
     return (
