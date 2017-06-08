@@ -15,7 +15,6 @@ export default class Products extends Component {
     }).then(function(response) {
       return response.json();
     }).then ((prods) => {
-      console.log(prods);
       this.setState({products: prods})
     }).catch(function(err) {
       console.log("Error " + err);
@@ -25,7 +24,7 @@ export default class Products extends Component {
   render() {
     const product_listing = this.state.products.map((item) => {
       return <div key={item.id}>
-        {item.product_name}
+        <img src={item.product_avatar}/> {item.product_name}: {item.price}
         </div>
     })
     return (
