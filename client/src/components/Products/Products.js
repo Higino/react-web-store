@@ -7,9 +7,9 @@ export default class Products extends Component {
     this.state = { products: [] };
   }
   componentDidMount() {
-    console.log ("Products Component just mounted")
-    
-    // url (required), options (optional)
+    // Uppon component mouting fetch product list from datacenter
+    // url (required), options (optional).
+    // I Guess this method only works for safari and chrome but then again this is a demo ... :)
     fetch('/product_listing', {
       method: 'get'
     }).then(function(response) {
