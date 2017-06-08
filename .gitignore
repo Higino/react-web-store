@@ -6,6 +6,8 @@ node_modules
 # testing
 coverage
 
+/food_lookup-demo
+
 # production
 build
 
