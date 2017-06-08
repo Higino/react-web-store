@@ -1,0 +1,23 @@
+{
+  "name": "react-web-store",
+  "version": "0.1.0",
+  "proxy": "http://localhost:9000/",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^3.4.0",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "echo 'Starting client' & react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
