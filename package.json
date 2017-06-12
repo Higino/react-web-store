@@ -12,8 +12,10 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server",
+    "server": "node start-server.js",
     "client": "node start-client.js",
     "build": "cd client & npm build"
-  }
+  },
+  "author": "Higino Silva",
+  "license": "ISC"  
 }

@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# Ignoring databse files since we can alays recreate database with the Seed app
+*.sqlite
+
 # dependencies
 node_modules
 

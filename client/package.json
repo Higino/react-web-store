@@ -1,5 +1,5 @@
 {
-  "name": "react-web-store",
+  "name": "react-web-store-client",
   "version": "0.1.0",
   "proxy": "http://localhost:9000/",
   "private": true,
@@ -19,5 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "author": "Higino Silva",
+  "license": "ISC"
 }
