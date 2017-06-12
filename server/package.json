@@ -1,0 +1,14 @@
+{
+  "name": "react-web-store-server",
+  "version": "0.1.0",
+  "description": "React web store server",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'Starting server' & node index.js"
+  },
+  "author": "Higino Silva",
+  "license": "ISC",
+  "dependencies": {
+    "sql.js": "^0.4.0"
+  }
+}
