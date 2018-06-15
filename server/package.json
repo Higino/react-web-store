@@ -9,6 +9,5 @@
   "author": "Higino Silva",
   "license": "ISC",
   "dependencies": {
-    "sql.js": "^0.4.0"
   }
 }
