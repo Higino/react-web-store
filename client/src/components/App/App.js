@@ -6,8 +6,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <h1>React Web Store Home</h1>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          This is a demo store. Please use the menus to complete actions. Only blue menus are implemented
         </p>
       </div>
     );

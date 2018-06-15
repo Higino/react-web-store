@@ -28,11 +28,11 @@ export default class Products extends Component {
         </div>
     })
     return (
-      <div className="prod-list">
-        <p className="App-intro">
-          List of products available:
-        </p>
-          {product_listing}
+      <div>
+        <h1>List of Products Available</h1>
+        <div className="prod-list">
+            {product_listing}
+        </div>
       </div>
     );
   }
