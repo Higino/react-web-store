@@ -7,6 +7,7 @@ export default class Products extends Component {
     super(props);
     this.state = { products: [] };
   }
+
   componentDidMount() {
     // Uppon component mouting fetch product list from datacenter
     // url (required), options (optional).
@@ -41,4 +42,4 @@ export default class Products extends Component {
       </Segment>
     );
   }
-}
+};
