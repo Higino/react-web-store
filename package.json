@@ -17,5 +17,5 @@
     "build": "cd client & npm build"
   },
   "author": "Higino Silva",
-  "license": "ISC"  
+  "license": "ISC"
 }

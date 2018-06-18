@@ -28,15 +28,19 @@ export default class Products extends Component {
 
     const items = this.state.products.map((item) => {
       return <Card color='violet' raised key={item.id}>
-        <Image src={item.product_avatar}></Image>
-        <Card.Content><Card.Header>{item.product_name}</Card.Header></Card.Content>
+        <Image src={item.product_avatar} alt='Error fetching image'></Image>
+        <Card.Content>
+          <Card.Header>{item.product_name}</Card.Header>
+          <Card.Meta>{item.type}</Card.Meta>
+          <Card.Description>{item.description}</Card.Description>
+        </Card.Content>
         <Card.Content extra><Icon name='currency'/>{item.price}</Card.Content>
       </Card>
     });
 
     return (
       <Segment raised>
-        <h2>List of Products Available</h2>
+        <h2 className='App'>Here what's available</h2>
         <Divider section/>
           <Card.Group centered >{items}</Card.Group>
       </Segment>
