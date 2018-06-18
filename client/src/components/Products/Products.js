@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
+import { Segment, Divider, Card, Image, Icon } from 'semantic-ui-react';
 
 export default class Products extends Component {
   constructor(props) {
@@ -22,18 +23,22 @@ export default class Products extends Component {
   }
 
   render() {
-    const product_listing = this.state.products.map((item) => {
-      return <div key={item.id}>
-        <img src={item.product_avatar} alt='cannot load product'/> {item.product_name}: {item.price}
-        </div>
-    })
+
+
+    const items = this.state.products.map((item) => {
+      return <Card color='violet' raised key={item.id}>
+        <Image src={item.product_avatar}></Image>
+        <Card.Content><Card.Header>{item.product_name}</Card.Header></Card.Content>
+        <Card.Content extra><Icon name='currency'/>{item.price}</Card.Content>
+      </Card>
+    });
+
     return (
-      <div>
-        <h1>List of Products Available</h1>
-        <div className="prod-list">
-            {product_listing}
-        </div>
-      </div>
+      <Segment raised>
+        <h2>List of Products Available</h2>
+        <Divider section/>
+          <Card.Group centered >{items}</Card.Group>
+      </Segment>
     );
   }
 }
