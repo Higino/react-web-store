@@ -6,6 +6,8 @@
   "dependencies": {
     "concurrently": "^3.4.0",
     "express": "^4.15.3",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.10",
     "morgan": "^1.8.2",
     "react": "^15.5.4",
     "react-dom": "^15.6.2",

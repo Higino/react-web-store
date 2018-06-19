@@ -2,7 +2,8 @@
 import App from './components/App';
 import Products from './components/Products';
 import About from './components/About';
-import { Input, Menu, Container } from 'semantic-ui-react'
+import { Menu, Container } from 'semantic-ui-react';
+import SearchAutoComplete from './components/SearchAutoComplete';
 
 
 import React, { Component } from 'react';
@@ -32,7 +33,7 @@ class Routes extends Component {
           />
           <Menu.Menu position='right'>
             <Menu.Item>
-              <Input icon='search' placeholder='Search...' />
+              <SearchAutoComplete icon='search' placeholder='Search...' />
             </Menu.Item>
           </Menu.Menu>
         </Menu>

@@ -27,7 +27,7 @@ export default class Products extends Component {
 
 
     const items = this.state.products.map((item) => {
-      return <Card color='violet' raised key={item.id}>
+      return <Card color='violet' raised key={item.id+item.product_name}>
         <Image src={item.product_avatar} alt='Error fetching image'></Image>
         <Card.Content>
           <Card.Header>{item.product_name}</Card.Header>
