@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import { Segment, Divider, Card, Image, Icon } from 'semantic-ui-react';
+import loading from './Loading_icon.gif';
 
 export default class Products extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export default class Products extends Component {
 
 
     const items = this.state.products.map((item) => {
-      return <Card color='violet' raised key={item.id+item.product_name}>
+      return <Card raised key={item.id}>
         <Image src={item.product_avatar} alt='Error fetching image'></Image>
         <Card.Content>
           <Card.Header>{item.product_name}</Card.Header>
@@ -40,9 +41,10 @@ export default class Products extends Component {
 
     return (
       <Segment raised>
-        <h2 className='App'>Here what's available</h2>
+        <h2>Here what's available</h2>
         <Divider section/>
-          <Card.Group centered >{items}</Card.Group>
+            <Image src={loading} alt='loagind'></Image>
+            <Card.Group centered >{items}</Card.Group>
       </Segment>
     );
   }

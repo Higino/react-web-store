@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import './style.css';
-import { Divider, Segment } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react';
+import logo from './StoreMain.png';
 
 
 export default class App extends Component {
   render() {
     return (
       <Segment raised>
-        <h2 className='App'>React Web Store Home</h2>
-        <Divider section/>
-          This is a demo store. Please use the menus to complete actions. Only blue menus are implemented
+        <div className="App">
+            <header className="App-header">
+              <img src={logo} className="logo" alt="logo" />
+              <h1 className="App-title">Welcome to Gino's Sample store</h1>
+            </header>
+          </div>
       </Segment>
     );
   }
