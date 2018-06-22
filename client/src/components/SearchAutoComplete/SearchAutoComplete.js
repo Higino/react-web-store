@@ -17,7 +17,7 @@ export default class SearchAutoComplete extends Component {
     }).then(function(response) {
       return response.json();
     }).then ((prods) => {
-        source = prods.map( (e)=>{ 
+        source = JSON.parse(prods).map( (e)=>{ 
             return {
                 key: e.id,
                 title: e.product_name, 

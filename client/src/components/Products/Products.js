@@ -18,7 +18,7 @@ export default class Products extends Component {
     }).then(function(response) {
       return response.json();
     }).then ((prods) => {
-      this.setState({products: prods})
+      this.setState({products: JSON.parse(prods)})
     }).catch(function(err) {
       console.log("Error " + err);
     });    
